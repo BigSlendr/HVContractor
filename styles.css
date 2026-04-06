@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Heartland Village General Contracting & Handyman Services</title>
+    <meta name="description" content="Full-range contracting and handyman services across Staten Island — plumbing, roofing, kitchens, bathrooms, flooring, painting, decks, and emergency repairs." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: { extend: { colors: { 'brand-navy': '#0d1b2a', 'brand-amber': '#d4891a', 'brand-amber-light': '#e8a030', 'brand-cream': '#f5f0e8' }, fontFamily: { headline: ['Barlow Condensed', 'sans-serif'], body: ['Inter', 'sans-serif'] } } }
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="font-body bg-white text-gray-800">
+
+    <div id="mobile-menu">
+      <button id="mobile-menu-close" aria-label="Close menu">✕</button>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:+13472564940" class="mt-4 bg-brand-amber text-white px-8 py-4 rounded-md font-headline font-black text-2xl uppercase tracking-wide">Call (347) 256-4940</a>
+    </div>
+
+    <header class="bg-brand-navy text-white sticky top-0 z-20 border-b-2 border-brand-amber">
+      <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="index.html" class="font-headline font-black tracking-wide leading-none">
+          <span class="text-2xl text-white">Heartland Village</span><br/>
+          <span class="text-xs text-brand-amber uppercase tracking-widest font-bold">General Contracting & Handyman</span>
+        </a>
+        <div class="hidden md:flex gap-6 text-sm font-semibold items-center">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active" href="services.html">Services</a>
+          <a class="nav-link" href="reviews.html">Reviews</a>
+          <a class="nav-link" href="gallery.html">Gallery</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <a href="tel:+13472564940" class="bg-brand-amber text-white px-5 py-2 rounded-md font-headline font-black text-base uppercase tracking-wide hover:bg-brand-amber-light transition-colors">Call Now</a>
+        </div>
+        <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu">
+          <span class="block w-6 h-0.5 bg-white"></span>
+          <span class="block w-6 h-0.5 bg-white"></span>
+          <span class="block w-6 h-0.5 bg-white"></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="bg-brand-navy py-14 px-4 text-white border-b-4 border-brand-amber">
+      <div class="max-w-6xl mx-auto">
+        <span class="section-label section-label-light">What We Do</span>
+        <h1 class="font-headline font-black text-5xl uppercase mb-3">Our Services</h1>
+        <p class="text-gray-300 text-lg max-w-2xl">From emergency repairs to full renovations — we handle every phase of home improvement. Licensed in NY, NJ & Nassau County.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section class="max-w-6xl mx-auto px-4 py-14">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+        <article class="card card-dark reveal">
+          <h3>⚡ Emergency Plumbing — 24/7</h3>
+          <p>Harvey answers at 10 PM. Burst pipes, water damage, leaks — we show up immediately, fix it right, and clean up completely. We showed up at 10 PM and stayed until the job was done.</p>
+          <a href="tel:+13472564940" class="inline-block mt-4 bg-brand-amber text-white px-5 py-2.5 rounded font-headline font-black text-sm uppercase tracking-wide hover:bg-brand-amber-light transition-colors">Call Now — Available 24/7</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>🏠 Roofing & Siding</h3>
+          <p>Complete roof replacements, targeted leak repairs, and siding installation across all materials — vinyl, wood, fiber cement, and more. We work with insurance claims to streamline the process and reduce your out-of-pocket cost.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>🪵 Kitchens & Bathrooms</h3>
+          <p>Complete remodels handled entirely in-house — no subcontractor runaround. Cabinets, countertops, tile, plumbing fixtures, lighting, and finish carpentry. We take projects from demo to final walkthrough.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>✨ Flooring</h3>
+          <p>Hardwood, bamboo, tile, and vinyl installation. Sanding, staining, and refinishing of existing floors. We have transformed floors that looked beyond saving. Our refinishing work is meticulous and clean.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>🎨 Painting</h3>
+          <p>Interior and exterior painting with meticulous prep work, wall patching, and flawless finish coats. We don't cut corners on prep — that's why the finish lasts. Ceilings, walls, trim, and exteriors.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>🪜 Decks & Concrete</h3>
+          <p>Deck construction using pressure-treated wood or TREX composite, custom railings including metal and TREX, concrete slabs, stoops, and walkways. We handle permits and NYC building compliance.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>💧 Water Damage Restoration</h3>
+          <p>Rapid response when water damage strikes. Full assessment, professional drying and treatment, and complete restoration. We work directly with insurance companies. Our clients have told us their space looked better than before we arrived.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>🪟 Doors, Windows & Trim</h3>
+          <p>Door and window replacement and installation, storm door repairs, interior trim and molding installation, and carpentry finish work. We do the detail work that other contractors skip.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>🔧 General Handyman</h3>
+          <p>Ceiling fans, light fixtures, doorbell installation, tile repairs, window tinting, pest and critter guards, solar panel work, and every odd job in between. No job is too small for Harvey's team.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>📋 City Violation Removal</h3>
+          <p>We have the licenses and experience to address and remove existing New York City building violations — a specialized service that very few contractors are equipped to offer. Call us to discuss your situation.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- MID-PAGE CTA -->
+    <section class="bg-brand-amber py-14 px-4">
+      <div class="max-w-3xl mx-auto text-center text-white">
+        <h2 class="font-headline font-black text-4xl uppercase mb-4">Don't See Your Project Listed?</h2>
+        <p class="text-amber-100 text-lg mb-8">We handle most types of home improvement work. Call Harvey and describe what you need — chances are we can help.</p>
+        <a href="tel:+13472564940" class="inline-block bg-white text-brand-navy px-10 py-4 rounded-md font-headline font-black text-xl uppercase tracking-wide hover:bg-gray-100 transition-colors">Call (347) 256-4940</a>
+        <p class="mt-4 text-amber-100 text-sm">Free estimates · Open 24 hours · Emergency service available</p>
+      </div>
+    </section>
+
+    <!-- CREDENTIALS -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="font-headline font-black text-3xl text-brand-navy uppercase mb-6">Licensed, Certified & Insured</h2>
+      <div class="flex flex-wrap gap-3">
+        <span class="cred-badge">✓ Licensed NY · NJ · Nassau County</span>
+        <span class="cred-badge">✓ General Contractor License</span>
+        <span class="cred-badge">✓ EPA Lead Certified</span>
+        <span class="cred-badge">✓ Fully Insured</span>
+        <span class="cred-badge">✓ Works with Insurance Claims</span>
+        <span class="cred-badge">✓ City Violation Removal</span>
+        <span class="cred-badge">✓ Free Estimates</span>
+        <span class="cred-badge">✓ Emergency 24/7</span>
+      </div>
+    </section>
+
+    <footer class="bg-brand-navy text-gray-400 py-12 px-4">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="font-headline font-black text-white text-xl uppercase mb-2">Heartland Village</div>
+          <p class="text-sm leading-relaxed mb-3">General Contracting & Handyman Services<br/>Staten Island, NY · Since 1994</p>
+          <p class="text-xs leading-relaxed">Licensed & Insured · NY, NJ & Nassau County<br/>EPA Lead Certified · General Contractor License</p>
+        </div>
+        <div>
+          <div class="font-headline font-black text-white text-sm uppercase tracking-wider mb-3">Pages</div>
+          <ul class="space-y-1.5 text-sm">
+            <li><a href="index.html" class="hover:text-brand-amber transition-colors">Home</a></li>
+            <li><a href="services.html" class="hover:text-brand-amber transition-colors">Services</a></li>
+            <li><a href="reviews.html" class="hover:text-brand-amber transition-colors">Reviews</a></li>
+            <li><a href="gallery.html" class="hover:text-brand-amber transition-colors">Gallery</a></li>
+            <li><a href="contact.html" class="hover:text-brand-amber transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-headline font-black text-white text-sm uppercase tracking-wider mb-3">Contact</div>
+          <ul class="space-y-1.5 text-sm">
+            <li><a href="tel:+13472564940" class="text-brand-amber font-bold hover:text-brand-amber-light transition-colors">(347) 256-4940</a></li>
+            <li>Open 24 Hours · 7 Days a Week</li>
+            <li>Staten Island · Nassau County · NJ</li>
+          </ul>
+        </div>
+      </div>
+      <div class="max-w-6xl mx-auto border-t border-white/10 pt-6 text-xs text-center">
+        © 2025 Heartland Village General Contracting & Handyman Services Corp. All rights reserved.
+      </div>
+    </footer>
+
+    <div class="mobile-call-bar">
+      <a href="tel:+13472564940" class="flex items-center justify-center gap-2 bg-brand-amber text-white font-headline font-black uppercase tracking-wide text-base">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.61 3.41 2 2 0 013.6 1.24h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.18 6.18l1.83-1.83a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        Call Harvey
+      </a>
+      <a href="https://maps.google.com/?q=Staten+Island+NY" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 bg-brand-navy text-white font-headline font-black uppercase tracking-wide text-base border-t-2 border-brand-amber">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Directions
+      </a>
+    </div>
+
+    <script>
+      document.getElementById('hamburger').addEventListener('click', () => { document.getElementById('mobile-menu').classList.add('open'); });
+      document.getElementById('mobile-menu-close').addEventListener('click', () => { document.getElementById('mobile-menu').classList.remove('open'); });
+      const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } }); }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+  </body>
+</html>

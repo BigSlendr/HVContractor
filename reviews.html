@@ -1,0 +1,93 @@
+# Heartland Village General Contracting & Handyman Services
+## Website — Static HTML + Tailwind CDN
+
+Same structure as Master Auto Mechanic. Pure HTML files, no build step required.
+
+---
+
+### 🚀 Deploy to GitHub Pages
+
+1. Create a new GitHub repo: `heartland-village-site`
+2. Upload all files maintaining this folder structure
+3. Settings → Pages → Source: **GitHub Actions**
+4. Push to `main` — the deploy workflow handles the rest
+5. Live at: `https://yourusername.github.io/heartland-village-site/`
+
+**Custom domain (optional):**
+- Add a `CNAME` file to the repo root containing your domain (e.g. `heartlandvillageny.com`)
+- Point your DNS A record to GitHub Pages IPs
+
+---
+
+### 📁 File Structure
+
+```
+/
+├── index.html          ← Homepage
+├── services.html       ← All services
+├── reviews.html        ← Customer reviews (update monthly)
+├── gallery.html        ← Project photos (update monthly)
+├── contact.html        ← Phone + info only, no form
+├── styles.css          ← Shared styles
+├── img/                ← All images go here
+│   ├── hero.jpg        ← Hero background (replace with real photo)
+│   └── gallery/        ← Project photos
+└── .github/
+    └── workflows/
+        └── deploy.yml  ← Auto-deploys on push to main
+```
+
+---
+
+### 🔄 Monthly Maintenance
+
+#### Adding New Reviews (reviews.html)
+1. Open `reviews.html`
+2. Find `<!-- ADD NEW REVIEWS AT THE TOP — newest first -->`
+3. Paste this block above existing reviews:
+
+```html
+<article class="card reveal">
+  <p class="stars mb-2">★★★★★</p>
+  <h3>REVIEWER NAME</h3>
+  <p class="text-xs text-gray-400 mb-3 font-semibold uppercase tracking-wide">
+    Staten Island · MONTH YEAR · via Angi
+  </p>
+  <p>"REVIEW TEXT HERE"</p>
+</article>
+```
+
+4. Only add 4★ and 5★ reviews
+5. Save → push to GitHub → auto-deploys
+
+---
+
+#### Adding Project Photos (gallery.html)
+1. Save photo to `/img/` folder — name it clearly (e.g. `deck-2025-04.jpg`)
+2. Open `gallery.html`
+3. Find `<!-- ADD NEW PHOTOS AT THE TOP — newest first -->`
+4. Paste this block:
+
+```html
+<div class="gallery-item" data-cat="CATEGORY">
+  <div class="relative group cursor-pointer rounded-xl overflow-hidden"
+       onclick="openLightbox('img/YOUR-PHOTO.jpg','Project Description')">
+    <img src="img/YOUR-PHOTO.jpg" alt="Descriptive alt text" loading="lazy"
+         class="w-full object-cover" />
+    <div class="absolute inset-0 bg-brand-navy/0 group-hover:bg-brand-navy/40 transition-colors flex items-end p-3 opacity-0 group-hover:opacity-100">
+      <span class="text-white font-headline font-bold text-sm uppercase tracking-wide">Project Description</span>
+    </div>
+  </div>
+</div>
+```
+
+5. CATEGORY options: `deck` · `flooring` · `kitchen` · `bathroom` · `exterior` · `restoration` · `ramp`
+6. Save → push to GitHub → auto-deploys
+
+---
+
+### 📞 Business Info
+- **Phone:** (347) 256-4940
+- **Hours:** 24/7 including emergencies
+- **Service Area:** Staten Island, Nassau County, New Jersey
+- **Angi Profile:** https://www.angi.com/companylist/us/ny/staten-island/heartland-village-general-contracting-and-handyman-services-reviews-9113959.htm

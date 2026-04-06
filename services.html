@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Reviews | Heartland Village General Contracting & Handyman Services</title>
+    <meta name="description" content="See what Staten Island homeowners say about Heartland Village. 4.8 stars on Angi. Angie's List Super Service Award winner 2016–2025." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: { extend: { colors: { 'brand-navy': '#0d1b2a', 'brand-amber': '#d4891a', 'brand-amber-light': '#e8a030', 'brand-cream': '#f5f0e8' }, fontFamily: { headline: ['Barlow Condensed', 'sans-serif'], body: ['Inter', 'sans-serif'] } } }
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="font-body bg-white text-gray-800">
+
+    <div id="mobile-menu">
+      <button id="mobile-menu-close" aria-label="Close menu">✕</button>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:+13472564940" class="mt-4 bg-brand-amber text-white px-8 py-4 rounded-md font-headline font-black text-2xl uppercase tracking-wide">Call (347) 256-4940</a>
+    </div>
+
+    <header class="bg-brand-navy text-white sticky top-0 z-20 border-b-2 border-brand-amber">
+      <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="index.html" class="font-headline font-black tracking-wide leading-none">
+          <span class="text-2xl text-white">Heartland Village</span><br/>
+          <span class="text-xs text-brand-amber uppercase tracking-widest font-bold">General Contracting & Handyman</span>
+        </a>
+        <div class="hidden md:flex gap-6 text-sm font-semibold items-center">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link active" href="reviews.html">Reviews</a>
+          <a class="nav-link" href="gallery.html">Gallery</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <a href="tel:+13472564940" class="bg-brand-amber text-white px-5 py-2 rounded-md font-headline font-black text-base uppercase tracking-wide hover:bg-brand-amber-light transition-colors">Call Now</a>
+        </div>
+        <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu">
+          <span class="block w-6 h-0.5 bg-white"></span>
+          <span class="block w-6 h-0.5 bg-white"></span>
+          <span class="block w-6 h-0.5 bg-white"></span>
+        </button>
+      </nav>
+    </header>
+
+    <section class="bg-brand-navy py-14 px-4 text-white border-b-4 border-brand-amber">
+      <div class="max-w-6xl mx-auto">
+        <span class="section-label section-label-light">What Our Customers Say</span>
+        <h1 class="font-headline font-black text-5xl uppercase mb-3">Customer Reviews</h1>
+        <p class="text-gray-300 text-lg max-w-2xl">Don't take our word for it. Here's what Staten Island homeowners say about working with Harvey and the Heartland team.</p>
+      </div>
+    </section>
+
+    <!-- RATING SUMMARY -->
+    <section class="bg-brand-cream border-b border-gray-200 py-8 px-4">
+      <div class="max-w-6xl mx-auto flex flex-wrap gap-8 items-center">
+        <div class="text-center">
+          <div class="font-headline font-black text-brand-navy" style="font-size: 4rem; line-height: 1;">4.8</div>
+          <div class="stars text-2xl">★★★★★</div>
+          <div class="text-xs text-gray-500 uppercase tracking-wider mt-1">Overall Rating on Angi</div>
+        </div>
+        <div class="h-16 w-px bg-gray-300 hidden sm:block"></div>
+        <div class="text-center">
+          <div class="font-headline font-black text-brand-navy text-5xl leading-none">100+</div>
+          <div class="text-xs text-gray-500 uppercase tracking-wider mt-2">Verified Reviews</div>
+        </div>
+        <div class="h-16 w-px bg-gray-300 hidden sm:block"></div>
+        <div class="text-center">
+          <div class="font-headline font-black text-brand-amber text-3xl leading-none">🏆 10×</div>
+          <div class="text-sm text-gray-700 font-semibold mt-1">Angie's List Super Service Award</div>
+          <div class="text-xs text-gray-500">2016 · 2017 · 2018 · 2019 · 2020 · 2021 · 2022 · 2023 · 2024 · 2025</div>
+        </div>
+        <div class="ml-auto">
+          <a href="https://www.angi.com/companylist/us/ny/staten-island/heartland-village-general-contracting-and-handyman-services-reviews-9113959.htm" target="_blank" rel="noopener" class="inline-block border-2 border-brand-navy text-brand-navy px-5 py-2.5 rounded-md font-headline font-black text-sm uppercase tracking-wide hover:bg-brand-navy hover:text-white transition-colors">See All on Angi →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS GRID -->
+    <!--
+      ══════════════════════════════════════════════════════
+      MONTHLY MAINTENANCE — ADDING NEW REVIEWS
+      ══════════════════════════════════════════════════════
+      1. Check Angi and HomeAdvisor for new 4★ or 5★ reviews
+      2. Copy the <article> block below and paste it at the
+         TOP of the reviews-grid div (newest first)
+      3. Fill in the reviewer name, date, source, and text
+      4. Save and push to GitHub — auto-deploys
+
+      REVIEW BLOCK TEMPLATE:
+      ──────────────────────
+      <article class="card reveal">
+        <p class="stars mb-2">★★★★★</p>
+        <h3>REVIEWER NAME</h3>
+        <p class="text-xs text-gray-400 mb-3 font-semibold uppercase tracking-wide">
+          Staten Island · MONTH YEAR · via ANGI or HOMEADVISOR
+        </p>
+        <p>"REVIEW TEXT HERE"</p>
+      </article>
+      ══════════════════════════════════════════════════════
+    -->
+    <section class="max-w-6xl mx-auto px-4 py-14">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="reviews-grid">
+
+        <!-- ADD NEW REVIEWS AT THE TOP — newest first -->
+
+        <article class="card reveal">
+          <p class="stars mb-2">★★★★★</p>
+          <h3>Sue M.</h3>
+          <p class="text-xs text-gray-400 mb-3 font-semibold uppercase tracking-wide">Staten Island · September 2025 · via Angi</p>
+          <p>"Harvey the owner & his excellent team were professional, punctual & attentive to every detail in building my beautiful handicap TREX ramp to my front door. This fantastic company also closed in my screen house for the winter months with a beautiful design of Plexiglass. His team completed odd jobs — installing two door bells, replacing damaged tiles in my kitchen & installing tinting sheets on four kitchen windows. Thank you Harvey & your professional team of excellence."</p>
+        </article>
+
+        <article class="card reveal">
+          <p class="stars mb-2">★★★★★</p>
+          <h3>Verified Homeowner</h3>
+          <p class="text-xs text-gray-400 mb-3 font-semibold uppercase tracking-wide">Staten Island · 2025 · via HomeAdvisor</p>
+          <p>"When disaster struck our home with unexpected water damage, Heartland Village Handyman Services came to the rescue — and truly exceeded every expectation. They didn't just address the obvious damage; they went deeper, ensuring every affected area was properly dried, treated, and restored. Clean-up was immaculate, and they treated our home with respect — as if it were their own. By the time they wrapped up, our space actually looked better than before."</p>
+        </article>
+
+        <article class="card reveal">
+          <p class="stars mb-2">★★★★★</p>
+          <h3>Augustine M.</h3>
+          <p class="text-xs text-gray-400 mb-3 font-semibold uppercase tracking-wide">Staten Island · via Angi</p>
+          <p>"I called Harvey at 10 PM for a busted water pipe in my mom's house. He answered immediately, said 'don't worry, I'm on my way,' turned off the main valve, fixed the broken pipe, cleaned up the water, dried the area, and told my mom 'all set.' His price was very fair given the time of service. Thank you Harvey."</p>
+        </article>
+
+        <article class="card reveal">
+          <p class="stars mb-2">★★★★★</p>
+          <h3>Verified Homeowner</h3>
+          <p class="text-xs text-gray-400 mb-3 font-semibold uppercase tracking-wide">Staten Island · 2024 · via Angi</p>
+          <p>"My floors look like new and the walls came out beautifully — you can't even notice the spots that were so severely damaged before. Harvey came personally to oversee everything was done perfectly. You'd think it was his own house he was working on, he took such care. For any contractor needs, look no further than Harvey at Heartland!"</p>
+        </article>
+
+        <article class="card reveal">
+          <p class="stars mb-2">★★★★★</p>
+          <h3>Verified Homeowner</h3>
+          <p class="text-xs text-gray-400 mb-3 font-semibold uppercase tracking-wide">Staten Island · 2024 · via Angi</p>
+          <p>"After two other contractors failed to return my calls and one just didn't show up for an estimate, Harvey was extremely professional. He is great with his timing and responds right away — unfortunately hard to find with contractors today. His craftsmanship was superb. I am telling everyone about him. Well worth it."</p>
+        </article>
+
+        <article class="card reveal">
+          <p class="stars mb-2">★★★★★</p>
+          <h3>Verified Homeowner</h3>
+          <p class="text-xs text-gray-400 mb-3 font-semibold uppercase tracking-wide">Staten Island · via Houzz</p>
+          <p>"Harvey is not cheap but you get a lot for the money. Compared to other estimates his was reasonable and he uses the best materials. He works fast and clean. I hired this company twice — they did my entire floors, bamboo and hardwood, and remodeled my entire kitchen. New cabinets, walls, counter tops. Highly recommend."</p>
+        </article>
+
+        <article class="card reveal">
+          <p class="stars mb-2">★★★★★</p>
+          <h3>Verified Homeowner</h3>
+          <p class="text-xs text-gray-400 mb-3 font-semibold uppercase tracking-wide">Staten Island · via Angi</p>
+          <p>"Harvey and his crew were fantastic from start to finish! They did an absolutely beautiful job refinishing my hard-wood floors and painting. Harvey is a very professional and responsive contractor. He and his crew were wonderful from start to finish!"</p>
+        </article>
+
+        <article class="card reveal">
+          <p class="stars mb-2">★★★★★</p>
+          <h3>Verified Homeowner</h3>
+          <p class="text-xs text-gray-400 mb-3 font-semibold uppercase tracking-wide">Staten Island · via Angi</p>
+          <p>"Hardzy came and fixed our storm door very quickly. Very satisfied. He was professional, courteous, and on time. There is no job too big or small for Harvey and the team. I feel very fortunate to have found Heartland Village."</p>
+        </article>
+
+        <article class="card reveal">
+          <p class="stars mb-2">★★★★★</p>
+          <h3>Verified Homeowner</h3>
+          <p class="text-xs text-gray-400 mb-3 font-semibold uppercase tracking-wide">Staten Island · via Angi</p>
+          <p>"Harvey and his team helped me out of a jam and did great work for me, jumping into action quickly. I found this handyman on SI Live and liked his reviews. Since then, he has worked on multiple projects — putting up shelves and helping me settle into my new apartment. I am very happy."</p>
+        </article>
+
+      </div>
+
+      <div class="mt-10 text-center">
+        <a href="https://www.angi.com/companylist/us/ny/staten-island/heartland-village-general-contracting-and-handyman-services-reviews-9113959.htm" target="_blank" rel="noopener" class="inline-block border-2 border-brand-navy text-brand-navy px-8 py-3.5 rounded-md font-headline font-black text-base uppercase tracking-wide hover:bg-brand-navy hover:text-white transition-colors">See All Reviews on Angi →</a>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="bg-brand-amber py-16 px-4">
+      <div class="max-w-3xl mx-auto text-center text-white">
+        <h2 class="font-headline font-black text-5xl uppercase mb-4">Ready to Get Started?</h2>
+        <p class="text-amber-100 text-lg mb-8">Call Harvey directly — free estimates, honest pricing, work done right.</p>
+        <a href="tel:+13472564940" class="inline-block bg-white text-brand-navy px-10 py-4 rounded-md font-headline font-black text-xl uppercase tracking-wide hover:bg-gray-100 transition-colors">Call (347) 256-4940</a>
+        <p class="mt-4 text-amber-100 text-sm">Open 24 Hours · 7 Days a Week · Emergency Service Available</p>
+      </div>
+    </section>
+
+    <footer class="bg-brand-navy text-gray-400 py-12 px-4">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="font-headline font-black text-white text-xl uppercase mb-2">Heartland Village</div>
+          <p class="text-sm leading-relaxed">General Contracting & Handyman Services<br/>Staten Island, NY · Since 1994</p>
+        </div>
+        <div>
+          <div class="font-headline font-black text-white text-sm uppercase tracking-wider mb-3">Pages</div>
+          <ul class="space-y-1.5 text-sm">
+            <li><a href="index.html" class="hover:text-brand-amber transition-colors">Home</a></li>
+            <li><a href="services.html" class="hover:text-brand-amber transition-colors">Services</a></li>
+            <li><a href="reviews.html" class="hover:text-brand-amber transition-colors">Reviews</a></li>
+            <li><a href="gallery.html" class="hover:text-brand-amber transition-colors">Gallery</a></li>
+            <li><a href="contact.html" class="hover:text-brand-amber transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-headline font-black text-white text-sm uppercase tracking-wider mb-3">Contact</div>
+          <ul class="space-y-1.5 text-sm">
+            <li><a href="tel:+13472564940" class="text-brand-amber font-bold">(347) 256-4940</a></li>
+            <li>Open 24 Hours · 7 Days a Week</li>
+          </ul>
+        </div>
+      </div>
+      <div class="max-w-6xl mx-auto border-t border-white/10 pt-6 text-xs text-center">
+        © 2025 Heartland Village General Contracting & Handyman Services Corp. All rights reserved.
+      </div>
+    </footer>
+
+    <div class="mobile-call-bar">
+      <a href="tel:+13472564940" class="flex items-center justify-center gap-2 bg-brand-amber text-white font-headline font-black uppercase tracking-wide text-base">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.61 3.41 2 2 0 013.6 1.24h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.18 6.18l1.83-1.83a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        Call Harvey
+      </a>
+      <a href="https://maps.google.com/?q=Staten+Island+NY" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 bg-brand-navy text-white font-headline font-black uppercase tracking-wide text-base border-t-2 border-brand-amber">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Directions
+      </a>
+    </div>
+
+    <script>
+      document.getElementById('hamburger').addEventListener('click', () => { document.getElementById('mobile-menu').classList.add('open'); });
+      document.getElementById('mobile-menu-close').addEventListener('click', () => { document.getElementById('mobile-menu').classList.remove('open'); });
+      const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } }); }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+  </body>
+</html>
